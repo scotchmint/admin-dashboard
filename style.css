@@ -1,0 +1,64 @@
+:root {
+    font-family: 'Alkatra', cursive;
+    background-color: #064e3b;
+}
+
+.icon {
+    width: 25px;
+}
+
+img {
+    width: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    border: 1px solid red;
+
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    border: 1px solid blue;
+
+    background-color: #38bdf8;
+    grid-row: 1 / 3;
+}
+
+.main-content {
+    border: 1px solid white;
+
+    background-color: #d1d5db;
+}
+
+.projects {
+    border: 1px solid orange;
+}
+
+.card {
+    border: 1px solid #ef4444;
+
+    background-color: white;
+}
+
+.announcements {
+    border: 1px solid rgb(214, 228, 17);
+
+    background-color: white;
+}
+
+.trending {
+    border: 1px solid gold ;
+
+    background-color: white;
+}
