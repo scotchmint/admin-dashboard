@@ -35,7 +35,7 @@ img {
 
 .upper-header_right {
     display: grid;
-    grid-template-columns: auto 90%;
+    grid-template-columns: auto 100%;
     justify-content: start;
     gap: 10px;
 }
@@ -43,7 +43,7 @@ img {
 .upper-header_left {
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 20px;
     grid-template-columns: repeat(3, auto);
 }
@@ -81,7 +81,7 @@ img {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 30px;
 }
 
@@ -112,7 +112,7 @@ ul {
 
     background-color: #e2e8f0;
     padding: 10px;
-    box-shadow: inset 0px 2px 5px 0px gray;
+    box-shadow:inset 0px 2px 5px 0px gray;
 }
 
 .projects {
