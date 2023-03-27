@@ -25,11 +25,15 @@ img {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: max-content;
 }
 
 .header {
     background-color: white;
-    padding: 10px 50px; 
+    padding: 10px 50px;
+    
+    display: grid;
+    grid-auto-rows: max-content;
 }
 
 .upper-header {
