@@ -46,7 +46,7 @@ img {
 
 .upper-header_right {
     display: grid;
-    grid-template-columns: auto 90%;
+    grid-template-columns: auto 1fr;
     justify-content: start;
     gap: 10px;
 }
@@ -151,31 +151,75 @@ a {
 }
 
 .main-content {
-    border: 1px solid white;
-
     background-color: #e2e8f0;
-    padding: 10px;
+    padding: 40px 30px;
     box-shadow:inset 0px 2px 5px 0px gray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content;
+    gap: 20px;
 }
 
 .projects {
-    border: 1px solid orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: max-content;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.container-title {
+    margin: 0;
+    grid-column: 1 / 3;
 }
 
 .card {
-    border: 1px solid #ef4444;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
 
+.card-content {
     background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    box-shadow: 2px 2px 5px 0px #9ca3af;
+}
+
+.card-background {
+    background-color: orange;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.projects .title {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: gray;
+}
+
+.icons {
+    justify-self: end;
+    align-self: end;
+}
+
+.icons .icon {
+    padding-left: 25px;
 }
 
 .announcements {
     border: 1px solid rgb(214, 228, 17);
-
     background-color: white;
 }
 
 .trending {
     border: 1px solid gold ;
-
     background-color: white;
+    grid-column: 2 / 3;
 }
