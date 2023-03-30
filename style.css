@@ -217,7 +217,29 @@ a {
 }
 
 .trending {
-    border: 1px solid gold ;
-    background-color: white;
     grid-column: 2 / 3;
 }
+
+.trending-users {
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px 0px #9ca3af;
+}
+
+.user {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70px auto;
+    margin-bottom: 20px;
+}
+
+.user-info > div:last-child
+{
+    color: gray;
+}
+
+div.user:last-child {
+    margin-bottom: 0;
+}
+
