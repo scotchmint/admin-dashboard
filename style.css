@@ -190,6 +190,10 @@ a {
     box-shadow: 2px 2px 5px 0px #9ca3af;
 }
 
+a.title {
+    color: black;
+}
+
 .card-background {
     background-color: orange;
     border-top-left-radius: 15px;
